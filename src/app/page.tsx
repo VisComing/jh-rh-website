@@ -1,3 +1,7 @@
+"use client";
+
+import { Button } from "antd";
+
 export default function Home() {
   return (
     <div>
@@ -18,5 +22,9 @@ export default function Home() {
 }
 
 function MyButton() {
-  return <button>Im a button</button>;
+  return (
+    <Button onClick={() => alert("hre")} type="primary">
+      Im a button
+    </Button>
+  );
 }
