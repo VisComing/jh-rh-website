@@ -2,7 +2,9 @@ export default function Home() {
   return (
     <div>
       <h1>博客</h1>
-      <span>JavaScript基础：https://developer.mozilla.org/zh-CN/docs/learn/JavaScript</span>
+      <span>
+        JavaScript基础：https://developer.mozilla.org/zh-CN/docs/learn/JavaScript
+      </span>
       <p>video: https://www.youtube.com/watch?v=88QJumITbQA</p>
       <p>react框架：https://react.docschina.org/learn</p>
       <p>nextjs: https://nextjs.org/docs</p>
@@ -12,11 +14,9 @@ export default function Home() {
       <br />
       <MyButton />
     </div>
-  )
+  );
 }
 
 function MyButton() {
-  return (
-    <button>Im a button</button>
-  );
+  return <button>Im a button</button>;
 }
