@@ -14,7 +14,7 @@ export default function Home() {
       <p>nextjs: https://nextjs.org/docs</p>
       <p>组件库：https://ant.design/components/overview-cn</p>
       <p>网站模板：https://pro.ant.design/zh-CN/docs/getting-started/</p>
-      <span>启动项目，vscode，打开终端，输入npx next dev</span>
+      <span>启动项目，vscode，打开终端，输入npm run dev</span>
       <br />
       <MyButton />
     </div>
@@ -23,7 +23,7 @@ export default function Home() {
 
 function MyButton() {
   return (
-    <Button onClick={() => alert("hre")} type="primary">
+    <Button onClick={() => alert("你好，江慧~")} type="primary">
       Im a button
     </Button>
   );
