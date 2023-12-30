@@ -1,6 +1,24 @@
 "use client";
 
-import { Button } from "antd";
+import { Button, Card } from "antd";
+import "./card_css.css";
+
+const MyCard: React.FC<{
+  title: string;
+  desc: string;
+  url: string;
+}> = ({ title, desc, url }) => (
+  <Card
+    className="my-card"
+    style={{ width: 300 }}
+    title={<h3 className="my-card-title">{title}</h3>}
+    onClick={() => {
+      open(url);
+    }}
+  >
+    {desc}
+  </Card>
+);
 
 export default function Home() {
   return (
@@ -20,6 +38,11 @@ export default function Home() {
       <span>启动项目，vscode，打开终端，输入npm run dev</span>
       <br />
       <MyButton />
+      <MyCard
+        title="JavaScript基础"
+        desc="从MDN官网获取有关JavaScript的详细信息"
+        url="https://developer.mozilla.org/zh-CN/docs/learn/JavaScript"
+      />
     </div>
   );
 }
